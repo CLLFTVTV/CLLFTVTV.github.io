@@ -1,0 +1,11 @@
+# Hugo build output and caches
+/public/
+/resources/_gen/
+/.hugo_build.lock
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+
+# Local tooling config (not part of the published site)
+.claude/

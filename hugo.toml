@@ -1,0 +1,73 @@
+# ── Site basics ─────────────────────────────────────────────
+baseURL = "https://CLLFTVTV.github.io/"
+locale = "en-us"
+title = "suli"
+theme = "PaperMod"
+
+# Clean URLs, robots.txt, and ordering
+enableRobotsTXT = true
+enableEmoji = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+# Newest-first listing on the homepage / sections
+[pagination]
+  pagerSize = 10
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+# Home page also emits an RSS + JSON feed (search index)
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# ── Theme params (PaperMod) ─────────────────────────────────
+[params]
+  env = "production"            # enables minification/SEO niceties on build
+  title = "suli"
+  description = "suli"
+  keywords = ["notes", "archive"]
+  author = "suli"
+
+  # Light / dark with a visible toggle in the header.
+  # "auto" follows the OS, and the sun/moon button overrides it.
+  defaultTheme = "auto"
+  disableThemeToggle = false
+
+  # Minimal, archive-friendly reading experience
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  ShowToc = false
+  comments = false              # no comments
+  hideMeta = false
+
+  # Short intro shown above the newest-first note list on the homepage
+  [params.homeInfoParams]
+    Title = "suli"
+    Content = "suli"
+
+# ── Header menu ─────────────────────────────────────────────
+[menu]
+  [[menu.main]]
+    identifier = "notes"
+    name = "notes"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "archive"
+    name = "archive"
+    url = "/archives/"
+    weight = 20
+
+# Allow raw HTML in markdown (handy for the occasional inline scan)
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
