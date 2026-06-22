@@ -39,6 +39,12 @@
 {{- partial "home_info.html" . }}
 {{- end }}
 
+{{- if gt (len $paginator.Pages) 0 }}
+<div class="feed-controls">
+  <button id="toggle-all" type="button" aria-expanded="false">Expand all</button>
+</div>
+{{- end }}
+
 <div id="post-feed">
 {{- range $paginator.Pages }}
 <article class="post-entry journal-entry entry-{{ .Section }}">
@@ -66,34 +72,79 @@
 (function () {
   var feed = document.getElementById('post-feed');
   var marker = document.getElementById('infinite-marker');
-  if (!feed || !marker) return;
-  var nextUrl = marker.getAttribute('data-next');
-  var loading = false;
+  var toggle = document.getElementById('toggle-all');
+  if (!feed) return;
 
-  function loadMore() {
-    if (loading || !nextUrl) return;
-    loading = true;
-    marker.classList.add('loading');
-    fetch(nextUrl).then(function (r) { return r.text(); }).then(function (html) {
-      var doc = new DOMParser().parseFromString(html, 'text/html');
-      var added = doc.querySelectorAll('#post-feed > article');
-      added.forEach(function (el) {
-        var node = document.importNode(el, true);
-        node.classList.add('fade-in');
-        feed.appendChild(node);
-      });
-      var nm = doc.getElementById('infinite-marker');
-      nextUrl = nm ? nm.getAttribute('data-next') : '';
-      loading = false;
-      marker.classList.remove('loading');
-      if (!nextUrl) { marker.style.display = 'none'; obs.disconnect(); }
-    }).catch(function () { loading = false; marker.classList.remove('loading'); });
+  function refreshClamp() {
+    var expanded = feed.classList.contains('expanded');
+    var arts = feed.querySelectorAll('.journal-entry');
+    for (var i = 0; i < arts.length; i++) {
+      var art = arts[i], c = art.querySelector('.entry-content');
+      if (!c) continue;
+      if (expanded || art.classList.contains('open')) { art.classList.remove('is-clamped'); continue; }
+      art.classList.toggle('is-clamped', c.scrollHeight > c.clientHeight + 2);
+    }
   }
 
-  var obs = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) { if (e.isIntersecting) loadMore(); });
-  }, { rootMargin: '800px 0px' });
-  obs.observe(marker);
+  function setExpanded(on) {
+    feed.classList.toggle('expanded', on);
+    if (toggle) {
+      toggle.setAttribute('aria-expanded', on ? 'true' : 'false');
+      toggle.textContent = on ? 'Collapse all' : 'Expand all';
+    }
+    try { localStorage.setItem('suli-expand-all', on ? '1' : '0'); } catch (e) {}
+    refreshClamp();
+  }
+
+  if (toggle) {
+    var saved = '0';
+    try { saved = localStorage.getItem('suli-expand-all') || '0'; } catch (e) {}
+    setExpanded(saved === '1');
+    toggle.addEventListener('click', function () { setExpanded(!feed.classList.contains('expanded')); });
+  } else {
+    refreshClamp();
+  }
+
+  // Click an entry's body (not links / not while selecting text) to toggle just that one
+  feed.addEventListener('click', function (ev) {
+    if (ev.target.closest('a')) return;
+    if (window.getSelection && String(window.getSelection()).length) return;
+    if (feed.classList.contains('expanded')) return;
+    var art = ev.target.closest('.journal-entry');
+    if (!art) return;
+    art.classList.toggle('open');
+    refreshClamp();
+  });
+
+  window.addEventListener('resize', function () { refreshClamp(); });
+
+  // Infinite scroll: fetch the next page and append its entries near the bottom
+  if (marker) {
+    var nextUrl = marker.getAttribute('data-next');
+    var loading = false;
+    var loadMore = function () {
+      if (loading || !nextUrl) return;
+      loading = true; marker.classList.add('loading');
+      fetch(nextUrl).then(function (r) { return r.text(); }).then(function (html) {
+        var doc = new DOMParser().parseFromString(html, 'text/html');
+        var added = doc.querySelectorAll('#post-feed > article');
+        added.forEach(function (el) {
+          var node = document.importNode(el, true);
+          node.classList.add('fade-in');
+          feed.appendChild(node);
+        });
+        var nm = doc.getElementById('infinite-marker');
+        nextUrl = nm ? nm.getAttribute('data-next') : '';
+        loading = false; marker.classList.remove('loading');
+        refreshClamp();
+        if (!nextUrl) { marker.style.display = 'none'; obs.disconnect(); }
+      }).catch(function () { loading = false; marker.classList.remove('loading'); });
+    };
+    var obs = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) loadMore(); });
+    }, { rootMargin: '800px 0px' });
+    obs.observe(marker);
+  }
 })();
 </script>
 

@@ -63,9 +63,44 @@
   color: var(--content);
   font-size: 16px;
   line-height: 1.72;
+  position: relative;
+  max-height: 4.6em;   /* collapsed by default: ~3 lines */
+  overflow: hidden;
 }
 .journal-entry .entry-content p { margin: 0 0 11px 0; }
 .journal-entry .entry-content p:last-child { margin-bottom: 0; }
+
+/* Expanded: globally (button) or a single opened entry */
+#post-feed.expanded .entry-content,
+.journal-entry.open .entry-content { max-height: none; overflow: visible; }
+
+/* Fade hint + pointer only when an entry is actually clamped */
+.journal-entry.is-clamped { cursor: pointer; }
+.journal-entry.is-clamped .entry-content::after {
+  content: '';
+  position: absolute; left: 0; right: 0; bottom: 0;
+  height: 2.6em;
+  background: linear-gradient(to bottom, transparent, var(--theme));
+  pointer-events: none;
+}
+.journal-entry.is-clamped:hover .entry-content::after {
+  background: linear-gradient(to bottom, transparent, var(--entry));
+}
+
+/* Expand / collapse all control */
+.feed-controls { display: flex; justify-content: flex-end; margin: 4px 0 12px; }
+#toggle-all {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--secondary);
+  font-size: 13px;
+  letter-spacing: .03em;
+  padding: 5px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: color .18s ease, border-color .18s ease, background .18s ease;
+}
+#toggle-all:hover { color: var(--primary); border-color: var(--tertiary); background: var(--entry); }
 
 /* Divider between entries written on the same day */
 .journal-entry .entry-content hr,
