@@ -1,54 +1,120 @@
-/* Titleless journal feed: flat entries separated by a thin rule */
+/* ---- Titleless journal feed ---- */
+
+#post-feed { margin-top: 8px; }
+
+/* Flat entries with a faint divider and a subtle hover */
 .post-entry.journal-entry {
   background: none;
   box-shadow: none;
-  border: none;
-  border-radius: 0;
-  padding: 0 0 28px 0;
-  margin: 0 0 28px 0;
+  border: 0;
+  border-radius: 8px;
+  border-left: 2px solid transparent;
   border-bottom: 1px solid var(--border);
+  padding: 20px 16px;
+  margin: 0;
+  transition: background .18s ease, border-color .18s ease;
 }
 .post-entry.journal-entry:hover {
+  background: var(--entry);
   box-shadow: none;
   transform: none;
+  border-left-color: var(--tertiary);
+  border-bottom-color: transparent;
 }
 
-/* Date acts as the heading now */
+/* Date is the heading now: small, spaced, quiet */
 .entry-date {
-  margin: 0 0 10px 0;
-  font-size: 17px;
+  margin: 0 0 9px 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .07em;
+  text-transform: uppercase;
 }
 .entry-date a {
   color: var(--secondary);
   box-shadow: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
 }
-.entry-date a:hover {
-  color: var(--primary);
+.entry-date a:hover { color: var(--primary); }
+
+/* Subtle dot distinguishes notes from dreams on the mixed homepage */
+.entry-date a::before {
+  content: '';
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--tertiary);
+  flex: 0 0 auto;
 }
+.entry-posts  .entry-date a::before { background: #6f9ad6; }  /* notes  */
+.entry-dreams .entry-date a::before { background: #b08bd4; }  /* dreams */
+
 .undated {
+  text-transform: none;
+  letter-spacing: 0;
   font-style: italic;
-  opacity: 0.55;
   font-weight: 400;
+  opacity: .55;
 }
 
-/* Body text of each entry */
+/* Body */
 .journal-entry .entry-content {
   color: var(--content);
-  margin: 0;
+  font-size: 16px;
+  line-height: 1.72;
 }
+.journal-entry .entry-content p { margin: 0 0 11px 0; }
+.journal-entry .entry-content p:last-child { margin-bottom: 0; }
 
-/* Divider between multiple entries written on the same day */
+/* Divider between entries written on the same day */
 .journal-entry .entry-content hr,
 .post-single .post-content hr {
   border: 0;
   height: 1px;
+  width: 34px;
+  margin: 16px 0;
   background: var(--border);
-  width: 40px;
-  margin: 18px 0;
-  opacity: 0.8;
+  opacity: .7;
 }
 
-/* Single-page date heading */
-.post-single .post-title.entry-date {
-  font-size: 24px;
+/* Gentle fade-in for entries loaded while scrolling */
+.journal-entry.fade-in { animation: jfade .45s ease both; }
+@keyframes jfade {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: none; }
+}
+
+/* Infinite-scroll loader */
+#infinite-marker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  min-height: 8px;
+}
+.loader-dots { display: none; gap: 6px; }
+#infinite-marker.loading .loader-dots { display: inline-flex; }
+.loader-dots span {
+  width: 7px; height: 7px;
+  border-radius: 50%;
+  background: var(--secondary);
+  opacity: .5;
+  animation: jbounce 1s infinite ease-in-out both;
+}
+.loader-dots span:nth-child(2) { animation-delay: .15s; }
+.loader-dots span:nth-child(3) { animation-delay: .30s; }
+@keyframes jbounce {
+  0%, 80%, 100% { transform: scale(.55); opacity: .3; }
+  40%           { transform: scale(1);   opacity: .9; }
+}
+.more-link { color: var(--secondary); }
+
+/* Single entry: date heading */
+.post-single .post-title.entry-date { font-size: 14px; }
+.post-single .post-title.entry-date::before { content: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .journal-entry.fade-in { animation: none; }
+  .loader-dots span { animation: none; }
 }

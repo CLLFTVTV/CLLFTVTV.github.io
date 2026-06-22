@@ -11,9 +11,9 @@ buildDrafts = false
 buildFuture = false
 buildExpired = false
 
-# Newest-first listing on the homepage / sections
+# Chunk size for the infinite-scroll feed (entries load 20 at a time)
 [pagination]
-  pagerSize = 10
+  pagerSize = 20
 
 [minify]
   disableXML = true

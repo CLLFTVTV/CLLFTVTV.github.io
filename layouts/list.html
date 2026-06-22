@@ -39,8 +39,9 @@
 {{- partial "home_info.html" . }}
 {{- end }}
 
+<div id="post-feed">
 {{- range $paginator.Pages }}
-<article class="post-entry journal-entry">
+<article class="post-entry journal-entry entry-{{ .Section }}">
   <header class="entry-header">
     <h2 class="entry-date">
       <a href="{{ .Permalink }}" aria-label="permalink">
@@ -54,18 +55,46 @@
   </div>
 </article>
 {{- end }}
+</div>
 
-{{- if gt $paginator.TotalPages 1 }}
-<footer class="page-footer">
-  <nav class="pagination">
-    {{- if $paginator.HasPrev }}
-    <a class="prev" href="{{ $paginator.Prev.URL | absURL }}">«&nbsp;{{ i18n "prev_page" }}</a>
-    {{- end }}
-    {{- if $paginator.HasNext }}
-    <a class="next" href="{{ $paginator.Next.URL | absURL }}">{{ i18n "next_page" }}&nbsp;»</a>
-    {{- end }}
-  </nav>
-</footer>
-{{- end }}
+<div id="infinite-marker" data-next="{{ with $paginator.Next }}{{ .URL }}{{ end }}">
+  <span class="loader-dots" aria-hidden="true"><span></span><span></span><span></span></span>
+  <noscript>{{ with $paginator.Next }}<a class="more-link" href="{{ .URL }}">older entries →</a>{{ end }}</noscript>
+</div>
+
+<script>
+(function () {
+  var feed = document.getElementById('post-feed');
+  var marker = document.getElementById('infinite-marker');
+  if (!feed || !marker) return;
+  var nextUrl = marker.getAttribute('data-next');
+  var loading = false;
+
+  function loadMore() {
+    if (loading || !nextUrl) return;
+    loading = true;
+    marker.classList.add('loading');
+    fetch(nextUrl).then(function (r) { return r.text(); }).then(function (html) {
+      var doc = new DOMParser().parseFromString(html, 'text/html');
+      var added = doc.querySelectorAll('#post-feed > article');
+      added.forEach(function (el) {
+        var node = document.importNode(el, true);
+        node.classList.add('fade-in');
+        feed.appendChild(node);
+      });
+      var nm = doc.getElementById('infinite-marker');
+      nextUrl = nm ? nm.getAttribute('data-next') : '';
+      loading = false;
+      marker.classList.remove('loading');
+      if (!nextUrl) { marker.style.display = 'none'; obs.disconnect(); }
+    }).catch(function () { loading = false; marker.classList.remove('loading'); });
+  }
+
+  var obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) loadMore(); });
+  }, { rootMargin: '800px 0px' });
+  obs.observe(marker);
+})();
+</script>
 
 {{- end }}{{- /* end main */ -}}
