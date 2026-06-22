@@ -28,8 +28,11 @@ buildExpired = false
   env = "production"            # enables minification/SEO niceties on build
   title = "suli"
   description = "suli"
-  keywords = ["notes", "archive"]
+  keywords = ["notes", "dreams", "archive"]
   author = "suli"
+
+  # Both sections feed the homepage timeline (newest-first)
+  mainSections = ["posts", "dreams"]
 
   # Light / dark with a visible toggle in the header.
   # "auto" follows the OS, and the sun/moon button overrides it.
@@ -61,6 +64,11 @@ buildExpired = false
     url = "/posts/"
     weight = 10
   [[menu.main]]
+    identifier = "dreams"
+    name = "dreams"
+    url = "/dreams/"
+    weight = 15
+  [[menu.main]]
     identifier = "archive"
     name = "archive"
     url = "/archives/"
@@ -71,3 +79,4 @@ buildExpired = false
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+      hardWraps = true   # preserve the line breaks inside your entries

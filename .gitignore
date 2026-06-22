@@ -9,3 +9,13 @@ Thumbs.db
 
 # Local tooling config (not part of the published site)
 .claude/
+
+# Raw source imports (private — never published)
+import/
+
+# Personal entries are kept LOCAL ONLY and never committed to the public repo.
+# To publish a specific one deliberately: git add -f <path>
+/content/posts/*.md
+!/content/posts/_index.md
+/content/dreams/*.md
+!/content/dreams/_index.md
