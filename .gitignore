@@ -10,6 +10,9 @@ Thumbs.db
 # Local tooling config (not part of the published site)
 .claude/
 
+# Private backup repo's separate git database — must NEVER be tracked by the public repo
+.backup-git/
+
 # Raw source imports (private — never published)
 import/
 
