@@ -64,6 +64,10 @@
   font-size: 16px;
   line-height: 1.72;
   position: relative;
+  /* Neutralize PaperMod's -webkit-box summary clamp so full content lays out normally */
+  display: block;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: unset;
   max-height: 4.6em;   /* collapsed by default: ~3 lines */
   overflow: hidden;
 }
