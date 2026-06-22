@@ -1,0 +1,54 @@
+/* Titleless journal feed: flat entries separated by a thin rule */
+.post-entry.journal-entry {
+  background: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  padding: 0 0 28px 0;
+  margin: 0 0 28px 0;
+  border-bottom: 1px solid var(--border);
+}
+.post-entry.journal-entry:hover {
+  box-shadow: none;
+  transform: none;
+}
+
+/* Date acts as the heading now */
+.entry-date {
+  margin: 0 0 10px 0;
+  font-size: 17px;
+}
+.entry-date a {
+  color: var(--secondary);
+  box-shadow: none;
+}
+.entry-date a:hover {
+  color: var(--primary);
+}
+.undated {
+  font-style: italic;
+  opacity: 0.55;
+  font-weight: 400;
+}
+
+/* Body text of each entry */
+.journal-entry .entry-content {
+  color: var(--content);
+  margin: 0;
+}
+
+/* Divider between multiple entries written on the same day */
+.journal-entry .entry-content hr,
+.post-single .post-content hr {
+  border: 0;
+  height: 1px;
+  background: var(--border);
+  width: 40px;
+  margin: 18px 0;
+  opacity: 0.8;
+}
+
+/* Single-page date heading */
+.post-single .post-title.entry-date {
+  font-size: 24px;
+}

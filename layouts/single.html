@@ -1,0 +1,25 @@
+{{- define "main" }}
+
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title entry-date">
+      {{- if .Params.undated }}<span class="undated">undated</span>
+      {{- else }}{{ .Date | time.Format (default "January 2, 2006" site.Params.DateFormat) }}{{ end -}}
+    </h1>
+  </header>
+
+  {{- if .Content }}
+  <div class="post-content md-content">{{ .Content }}</div>
+  {{- end }}
+
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags">
+      {{- range ($.GetTerms $tags) }}
+      <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+      {{- end }}
+    </ul>
+  </footer>
+</article>
+
+{{- end }}{{/* end main */}}

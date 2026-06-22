@@ -68,11 +68,6 @@ buildExpired = false
     name = "dreams"
     url = "/dreams/"
     weight = 15
-  [[menu.main]]
-    identifier = "archive"
-    name = "archive"
-    url = "/archives/"
-    weight = 20
 
 # Allow raw HTML in markdown (handy for the occasional inline scan)
 [markup]
