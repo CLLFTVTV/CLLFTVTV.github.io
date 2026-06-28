@@ -41,6 +41,7 @@
 
 {{- if gt (len $paginator.Pages) 0 }}
 <div class="feed-controls">
+  <button id="toggle-view" type="button">Grid view</button>
   <button id="toggle-all" type="button" aria-expanded="false">Expand all</button>
 </div>
 {{- end }}
@@ -72,77 +73,126 @@
 (function () {
   var feed = document.getElementById('post-feed');
   var marker = document.getElementById('infinite-marker');
-  var toggle = document.getElementById('toggle-all');
+  var btnAll = document.getElementById('toggle-all');
+  var btnView = document.getElementById('toggle-view');
   if (!feed) return;
 
+  var ROW = 8, GAP = 14;
+  var SIZES = ['m','s','w','l','t','s','m','wl','s','l','m','t','w','s','l','m','wl','s'];
+  var idx = 0;
+  var viewMode = 'list', globalOpen = false;
+  try { viewMode = localStorage.getItem('suli-view') || 'list'; } catch (e) {}
+  try { globalOpen = localStorage.getItem('suli-expand-all') === '1'; } catch (e) {}
+
+  function tag(art) { art.classList.add('size-' + SIZES[idx++ % SIZES.length]); }
+
+  function gridSpan(art) {
+    var h = art.getBoundingClientRect().height;
+    art.style.gridRowEnd = 'span ' + Math.max(1, Math.ceil((h + GAP) / (ROW + GAP)));
+  }
+  function gridLayout() {
+    if (viewMode !== 'grid') return;
+    feed.querySelectorAll('.journal-entry').forEach(gridSpan);
+  }
+  function gridLayoutDuring(ms) {
+    if (viewMode !== 'grid') return;
+    var start = performance.now();
+    (function loop(t) { gridLayout(); if ((t || start) - start < ms) requestAnimationFrame(loop); else gridLayout(); })();
+  }
+
   function refreshClamp() {
-    var expanded = feed.classList.contains('expanded');
-    var arts = feed.querySelectorAll('.journal-entry');
-    for (var i = 0; i < arts.length; i++) {
-      var art = arts[i], c = art.querySelector('.entry-content');
-      if (!c) continue;
-      if (expanded || art.classList.contains('open')) { art.classList.remove('is-clamped'); continue; }
+    feed.querySelectorAll('.journal-entry').forEach(function (art) {
+      var c = art.querySelector('.entry-content');
+      if (!c) return;
+      if (art.classList.contains('open')) { art.classList.remove('is-clamped'); return; }
       art.classList.toggle('is-clamped', c.scrollHeight > c.clientHeight + 2);
+    });
+  }
+
+  function onEnd(el, cb) {
+    var done = false;
+    function fn(e) { if (e && e.propertyName && e.propertyName !== 'max-height') return; if (done) return; done = true; el.removeEventListener('transitionend', fn); cb(); }
+    el.addEventListener('transitionend', fn);
+    setTimeout(function () { fn({ propertyName: 'max-height' }); }, 520);
+  }
+
+  function setOpen(art, open, animate) {
+    var c = art.querySelector('.entry-content');
+    if (!c) return;
+    if (open) {
+      art.classList.add('open'); art.classList.remove('is-clamped');
+      if (animate) { c.style.maxHeight = c.scrollHeight + 'px'; onEnd(c, function () { if (art.classList.contains('open')) c.style.maxHeight = 'none'; }); }
+      else { c.style.maxHeight = 'none'; }
+    } else {
+      art.classList.remove('open');
+      if (animate) { c.style.maxHeight = c.scrollHeight + 'px'; c.offsetHeight; c.style.maxHeight = ''; onEnd(c, function () { art.classList.toggle('is-clamped', c.scrollHeight > c.clientHeight + 2); }); }
+      else { c.style.maxHeight = ''; }
     }
   }
 
-  function setExpanded(on) {
-    feed.classList.toggle('expanded', on);
-    if (toggle) {
-      toggle.setAttribute('aria-expanded', on ? 'true' : 'false');
-      toggle.textContent = on ? 'Collapse all' : 'Expand all';
-    }
-    try { localStorage.setItem('suli-expand-all', on ? '1' : '0'); } catch (e) {}
+  function setExpandAll(open) {
+    globalOpen = open;
+    feed.querySelectorAll('.journal-entry').forEach(function (a) { setOpen(a, open, true); });
+    if (btnAll) { btnAll.textContent = open ? 'Collapse all' : 'Expand all'; btnAll.setAttribute('aria-expanded', open ? 'true' : 'false'); }
+    try { localStorage.setItem('suli-expand-all', open ? '1' : '0'); } catch (e) {}
+    gridLayoutDuring(460);
+    if (!open) setTimeout(refreshClamp, 460);
+  }
+
+  function setView(mode) {
+    viewMode = mode;
+    feed.classList.toggle('grid-view', mode === 'grid');
+    if (btnView) btnView.textContent = mode === 'grid' ? 'List view' : 'Grid view';
+    try { localStorage.setItem('suli-view', mode); } catch (e) {}
+    if (mode === 'grid') { gridLayout(); }
+    else { feed.querySelectorAll('.journal-entry').forEach(function (a) { a.style.gridRowEnd = ''; }); }
     refreshClamp();
   }
 
-  if (toggle) {
-    var saved = '0';
-    try { saved = localStorage.getItem('suli-expand-all') || '0'; } catch (e) {}
-    setExpanded(saved === '1');
-    toggle.addEventListener('click', function () { setExpanded(!feed.classList.contains('expanded')); });
-  } else {
-    refreshClamp();
-  }
+  // tag existing entries with size classes, then apply persisted state
+  feed.querySelectorAll('.journal-entry').forEach(function (a) { tag(a); if (globalOpen) setOpen(a, true, false); });
+  if (btnAll) btnAll.textContent = globalOpen ? 'Collapse all' : 'Expand all';
+  setView(viewMode);
 
-  // Click an entry's body (not links / not while selecting text) to toggle just that one
+  if (btnAll) btnAll.addEventListener('click', function () { setExpandAll(!globalOpen); });
+  if (btnView) btnView.addEventListener('click', function () { setView(viewMode === 'grid' ? 'list' : 'grid'); });
+
+  // click an entry body (not links / not selecting text) to toggle just that one
   feed.addEventListener('click', function (ev) {
     if (ev.target.closest('a')) return;
     if (window.getSelection && String(window.getSelection()).length) return;
-    if (feed.classList.contains('expanded')) return;
     var art = ev.target.closest('.journal-entry');
     if (!art) return;
-    art.classList.toggle('open');
-    refreshClamp();
+    setOpen(art, !art.classList.contains('open'), true);
+    gridLayoutDuring(460);
   });
 
-  window.addEventListener('resize', function () { refreshClamp(); });
+  var rt;
+  window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(gridLayout, 120); });
 
-  // Infinite scroll: fetch the next page and append its entries near the bottom
+  // infinite scroll
   if (marker) {
-    var nextUrl = marker.getAttribute('data-next');
-    var loading = false;
+    var nextUrl = marker.getAttribute('data-next'), loading = false;
     var loadMore = function () {
       if (loading || !nextUrl) return;
       loading = true; marker.classList.add('loading');
       fetch(nextUrl).then(function (r) { return r.text(); }).then(function (html) {
         var doc = new DOMParser().parseFromString(html, 'text/html');
-        var added = doc.querySelectorAll('#post-feed > article');
-        added.forEach(function (el) {
+        doc.querySelectorAll('#post-feed > article').forEach(function (el) {
           var node = document.importNode(el, true);
           node.classList.add('fade-in');
+          tag(node);
           feed.appendChild(node);
+          if (globalOpen) setOpen(node, true, false);
         });
         var nm = doc.getElementById('infinite-marker');
         nextUrl = nm ? nm.getAttribute('data-next') : '';
         loading = false; marker.classList.remove('loading');
-        refreshClamp();
+        gridLayout(); refreshClamp();
         if (!nextUrl) { marker.style.display = 'none'; obs.disconnect(); }
       }).catch(function () { loading = false; marker.classList.remove('loading'); });
     };
-    var obs = new IntersectionObserver(function (es) {
-      es.forEach(function (e) { if (e.isIntersecting) loadMore(); });
-    }, { rootMargin: '800px 0px' });
+    var obs = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) loadMore(); }); }, { rootMargin: '800px 0px' });
     obs.observe(marker);
   }
 })();
