@@ -33,7 +33,9 @@
 }
 .journal-entry .entry-content p { margin: 0 0 11px 0; }
 .journal-entry .entry-content p:last-child { margin-bottom: 0; }
-.journal-entry.open .entry-content { overflow: visible; }   /* JS controls max-height inline */
+/* Keep overflow hidden even when open, so the max-height transition is visible
+   (overflow:visible would reveal everything instantly and make it look like a snap).
+   JS sets max-height to 'none' only after the animation finishes. */
 
 /* Same-day divider */
 .journal-entry .entry-content hr,
@@ -93,7 +95,8 @@
 #post-feed.grid-view .size-t  .entry-content { max-height: 22em;  }
 #post-feed.grid-view .size-w  .entry-content { max-height: 7em;   }
 #post-feed.grid-view .size-wl .entry-content { max-height: 12.5em;}
-#post-feed.grid-view .journal-entry.open .entry-content { max-height: none; }
+/* open state is driven by inline max-height from JS (so it can animate);
+   no CSS max-height:none here — transitioning from 'none' would snap. */
 
 @media (max-width: 540px) {
   #post-feed.grid-view { grid-template-columns: 1fr; padding: 0 6px; }
@@ -119,9 +122,9 @@
 .post-single .post-title.entry-date { font-size: 14px; }
 .post-single .post-title.entry-date::before { content: none; }
 
+/* Reduced-motion: drop the flashy bits, but keep the gentle height ease
+   (it's a functional expand/collapse transition, requested explicitly). */
 @media (prefers-reduced-motion: reduce) {
-  .journal-entry .entry-content,
-  #post-feed.grid-view .journal-entry { transition: none; }
   .journal-entry.fade-in { animation: none; }
   .loader-dots span { animation: none; }
 }

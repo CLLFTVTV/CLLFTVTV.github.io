@@ -80,9 +80,9 @@
   var ROW = 8, GAP = 14;
   var SIZES = ['m','s','w','l','t','s','m','wl','s','l','m','t','w','s','l','m','wl','s'];
   var idx = 0;
-  var viewMode = 'list', globalOpen = false;
-  try { viewMode = localStorage.getItem('suli-view') || 'list'; } catch (e) {}
-  try { globalOpen = localStorage.getItem('suli-expand-all') === '1'; } catch (e) {}
+  var viewMode = 'grid', globalOpen = false;   // defaults: grid view, collapsed
+  try { viewMode = localStorage.getItem('suli-view2') || 'grid'; } catch (e) {}
+  try { globalOpen = localStorage.getItem('suli-open2') === '1'; } catch (e) {}
 
   function tag(art) { art.classList.add('size-' + SIZES[idx++ % SIZES.length]); }
 
@@ -134,7 +134,7 @@
     globalOpen = open;
     feed.querySelectorAll('.journal-entry').forEach(function (a) { setOpen(a, open, true); });
     if (btnAll) { btnAll.textContent = open ? 'Collapse all' : 'Expand all'; btnAll.setAttribute('aria-expanded', open ? 'true' : 'false'); }
-    try { localStorage.setItem('suli-expand-all', open ? '1' : '0'); } catch (e) {}
+    try { localStorage.setItem('suli-open2', open ? '1' : '0'); } catch (e) {}
     gridLayoutDuring(460);
     if (!open) setTimeout(refreshClamp, 460);
   }
@@ -143,7 +143,7 @@
     viewMode = mode;
     feed.classList.toggle('grid-view', mode === 'grid');
     if (btnView) btnView.textContent = mode === 'grid' ? 'List view' : 'Grid view';
-    try { localStorage.setItem('suli-view', mode); } catch (e) {}
+    try { localStorage.setItem('suli-view2', mode); } catch (e) {}
     if (mode === 'grid') { gridLayout(); }
     else { feed.querySelectorAll('.journal-entry').forEach(function (a) { a.style.gridRowEnd = ''; }); }
     refreshClamp();
