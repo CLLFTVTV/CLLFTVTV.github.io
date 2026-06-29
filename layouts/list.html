@@ -27,28 +27,33 @@
 <div class="post-content md-content">{{ .Content }}</div>
 {{- end }}
 
-{{- $pages := union .RegularPages .Sections }}
-{{- if .IsHome }}
-{{- $pages = where site.RegularPages "Type" "in" site.Params.mainSections }}
-{{- $pages = where $pages "Params.hiddenInHomeList" "!=" "true" }}
-{{- end }}
+{{- $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- if not .IsHome }}{{ $pages = .RegularPages }}{{ end }}
+{{- $pages = $pages.ByDate.Reverse }}
 
-{{- $paginator := .Paginate $pages }}
-
-{{- if and .IsHome site.Params.homeInfoParams (eq $paginator.PageNumber 1) }}
+{{- if and .IsHome site.Params.homeInfoParams }}
 {{- partial "home_info.html" . }}
 {{- end }}
 
-{{- if gt (len $paginator.Pages) 0 }}
+{{- if gt (len $pages) 0 }}
 <div class="feed-controls">
-  <button id="toggle-view" type="button">Grid view</button>
-  <button id="toggle-all" type="button" aria-expanded="false">Expand all</button>
+  <div class="sort-group" role="group" aria-label="Sort entries">
+    <button type="button" data-sort="newest">Newest</button>
+    <button type="button" data-sort="oldest">Oldest</button>
+    <button type="button" data-sort="random">Random</button>
+  </div>
+  <div class="view-group">
+    <button id="toggle-view" type="button">Grid view</button>
+    <button id="toggle-all" type="button" aria-expanded="false">Expand all</button>
+  </div>
 </div>
 {{- end }}
 
-<div id="post-feed">
-{{- range $paginator.Pages }}
-<article class="post-entry journal-entry entry-{{ .Section }}">
+<div id="post-feed"
+     data-scope="{{ if .IsHome }}home{{ else }}{{ .Section }}{{ end }}"
+     data-default-sort="{{ if .IsHome }}random{{ else }}newest{{ end }}">
+{{- range $pages }}
+<article class="post-entry journal-entry entry-{{ .Section }}" data-ts="{{ .Date.Unix }}">
   <header class="entry-header">
     <h2 class="entry-date">
       <a href="{{ .Permalink }}" aria-label="permalink">
@@ -64,136 +69,148 @@
 {{- end }}
 </div>
 
-<div id="infinite-marker" data-next="{{ with $paginator.Next }}{{ .URL }}{{ end }}">
-  <span class="loader-dots" aria-hidden="true"><span></span><span></span><span></span></span>
-  <noscript>{{ with $paginator.Next }}<a class="more-link" href="{{ .URL }}">older entries →</a>{{ end }}</noscript>
-</div>
+<div id="reveal-sentinel" aria-hidden="true"><span class="loader-dots"><span></span><span></span><span></span></span></div>
 
 <script>
 (function () {
   var feed = document.getElementById('post-feed');
-  var marker = document.getElementById('infinite-marker');
-  var btnAll = document.getElementById('toggle-all');
-  var btnView = document.getElementById('toggle-view');
   if (!feed) return;
+  var sentinel = document.getElementById('reveal-sentinel');
+  var btnView = document.getElementById('toggle-view');
+  var btnAll = document.getElementById('toggle-all');
+  var sortBtns = [].slice.call(document.querySelectorAll('.sort-group button'));
 
-  var ROW = 8, GAP = 14;
+  var ROW = 8, GAP = 14, CHUNK = 24;
   var SIZES = ['m','s','w','l','t','s','m','wl','s','l','m','t','w','s','l','m','wl','s'];
-  var idx = 0;
-  var viewMode = 'grid', globalOpen = false;   // defaults: grid view, collapsed
-  try { viewMode = localStorage.getItem('suli-view2') || 'grid'; } catch (e) {}
-  try { globalOpen = localStorage.getItem('suli-open2') === '1'; } catch (e) {}
+  var scope = feed.dataset.scope || 'home';
+  var defaultSort = feed.dataset.defaultSort || 'newest';
 
-  function tag(art) { art.classList.add('size-' + SIZES[idx++ % SIZES.length]); }
+  var get = function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } };
+  var set = function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} };
 
-  function gridSpan(art) {
-    var h = art.getBoundingClientRect().height;
-    art.style.gridRowEnd = 'span ' + Math.max(1, Math.ceil((h + GAP) / (ROW + GAP)));
-  }
-  function gridLayout() {
-    if (viewMode !== 'grid') return;
-    feed.querySelectorAll('.journal-entry').forEach(gridSpan);
-  }
+  var viewMode = get('suli-view2') || 'grid';
+  var globalOpen = get('suli-open2') === '1';
+  var sortMode = get('suli-sort-' + scope) || defaultSort;
+
+  var all = [].slice.call(feed.querySelectorAll('.journal-entry'));
+  all.forEach(function (a, i) { a.classList.add('size-' + SIZES[i % SIZES.length]); });
+  var shown = 0;
+
+  /* ---------- helpers ---------- */
+  function gridSpan(a) { a.style.gridRowEnd = 'span ' + Math.max(1, Math.ceil((a.getBoundingClientRect().height + GAP) / (ROW + GAP))); }
+  function gridLayout() { if (viewMode === 'grid') all.forEach(function (a) { if (!a.classList.contains('pending')) gridSpan(a); }); }
   function gridLayoutDuring(ms) {
     if (viewMode !== 'grid') return;
     var start = performance.now();
     (function loop(t) { gridLayout(); if ((t || start) - start < ms) requestAnimationFrame(loop); else gridLayout(); })();
   }
-
   function refreshClamp() {
-    feed.querySelectorAll('.journal-entry').forEach(function (art) {
-      var c = art.querySelector('.entry-content');
-      if (!c) return;
-      if (art.classList.contains('open')) { art.classList.remove('is-clamped'); return; }
-      art.classList.toggle('is-clamped', c.scrollHeight > c.clientHeight + 2);
+    all.forEach(function (a) {
+      if (a.classList.contains('pending')) return;
+      var c = a.querySelector('.entry-content'); if (!c) return;
+      if (a.classList.contains('open')) { a.classList.remove('is-clamped'); return; }
+      a.classList.toggle('is-clamped', c.scrollHeight > c.clientHeight + 2);
     });
   }
-
   function onEnd(el, cb) {
     var done = false;
     function fn(e) { if (e && e.propertyName && e.propertyName !== 'max-height') return; if (done) return; done = true; el.removeEventListener('transitionend', fn); cb(); }
     el.addEventListener('transitionend', fn);
     setTimeout(function () { fn({ propertyName: 'max-height' }); }, 520);
   }
-
-  function setOpen(art, open, animate) {
-    var c = art.querySelector('.entry-content');
-    if (!c) return;
+  function setOpen(a, open, animate) {
+    var c = a.querySelector('.entry-content'); if (!c) return;
     if (open) {
-      art.classList.add('open'); art.classList.remove('is-clamped');
-      if (animate) { c.style.maxHeight = c.scrollHeight + 'px'; onEnd(c, function () { if (art.classList.contains('open')) c.style.maxHeight = 'none'; }); }
+      a.classList.add('open'); a.classList.remove('is-clamped');
+      if (animate) { c.style.maxHeight = c.scrollHeight + 'px'; onEnd(c, function () { if (a.classList.contains('open')) c.style.maxHeight = 'none'; }); }
       else { c.style.maxHeight = 'none'; }
     } else {
-      art.classList.remove('open');
-      if (animate) { c.style.maxHeight = c.scrollHeight + 'px'; c.offsetHeight; c.style.maxHeight = ''; onEnd(c, function () { art.classList.toggle('is-clamped', c.scrollHeight > c.clientHeight + 2); }); }
+      a.classList.remove('open');
+      if (animate) { c.style.maxHeight = c.scrollHeight + 'px'; c.offsetHeight; c.style.maxHeight = ''; onEnd(c, function () { a.classList.toggle('is-clamped', c.scrollHeight > c.clientHeight + 2); }); }
       else { c.style.maxHeight = ''; }
     }
   }
 
-  function setExpandAll(open) {
-    globalOpen = open;
-    feed.querySelectorAll('.journal-entry').forEach(function (a) { setOpen(a, open, true); });
-    if (btnAll) { btnAll.textContent = open ? 'Collapse all' : 'Expand all'; btnAll.setAttribute('aria-expanded', open ? 'true' : 'false'); }
-    try { localStorage.setItem('suli-open2', open ? '1' : '0'); } catch (e) {}
-    gridLayoutDuring(460);
-    if (!open) setTimeout(refreshClamp, 460);
+  /* ---------- chunked reveal (infinite scroll) ---------- */
+  function revealMore() {
+    var end = Math.min(shown + CHUNK, all.length);
+    for (var i = shown; i < end; i++) {
+      var a = all[i];
+      a.classList.remove('pending');
+      a.classList.add('fade-in');
+      if (globalOpen) setOpen(a, true, false);
+    }
+    shown = end;
+    gridLayout(); refreshClamp();
+    if (shown >= all.length && sentinel) sentinel.style.display = 'none';
+    else if (sentinel) sentinel.style.display = '';
+  }
+  function resetReveal() {
+    all.forEach(function (a) { a.classList.add('pending'); a.classList.remove('fade-in'); });
+    shown = 0;
+    revealMore();
   }
 
+  /* ---------- sort / shuffle ---------- */
+  function shuffle(arr) { for (var i = arr.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = arr[i]; arr[i] = arr[j]; arr[j] = t; } return arr; }
+  function applySort(mode, persist) {
+    sortMode = mode;
+    var arr = all.slice();
+    if (mode === 'newest') arr.sort(function (a, b) { return (+b.dataset.ts) - (+a.dataset.ts); });
+    else if (mode === 'oldest') arr.sort(function (a, b) { return (+a.dataset.ts) - (+b.dataset.ts); });
+    else shuffle(arr);
+    var frag = document.createDocumentFragment();
+    arr.forEach(function (a) { frag.appendChild(a); });   // moves nodes into new order
+    feed.appendChild(frag);
+    all = arr;
+    if (persist) set('suli-sort-' + scope, mode);
+    sortBtns.forEach(function (b) { b.classList.toggle('active', b.dataset.sort === mode); b.setAttribute('aria-pressed', b.dataset.sort === mode ? 'true' : 'false'); });
+    resetReveal();
+  }
+
+  /* ---------- view + expand ---------- */
   function setView(mode) {
     viewMode = mode;
     feed.classList.toggle('grid-view', mode === 'grid');
     if (btnView) btnView.textContent = mode === 'grid' ? 'List view' : 'Grid view';
-    try { localStorage.setItem('suli-view2', mode); } catch (e) {}
-    if (mode === 'grid') { gridLayout(); }
-    else { feed.querySelectorAll('.journal-entry').forEach(function (a) { a.style.gridRowEnd = ''; }); }
+    set('suli-view2', mode);
+    if (mode === 'grid') gridLayout();
+    else all.forEach(function (a) { a.style.gridRowEnd = ''; });
     refreshClamp();
   }
+  function setExpandAll(open) {
+    globalOpen = open;
+    all.forEach(function (a) { if (!a.classList.contains('pending')) setOpen(a, open, true); });
+    if (btnAll) { btnAll.textContent = open ? 'Collapse all' : 'Expand all'; btnAll.setAttribute('aria-expanded', open ? 'true' : 'false'); }
+    set('suli-open2', open ? '1' : '0');
+    gridLayoutDuring(460);
+    if (!open) setTimeout(refreshClamp, 460);
+  }
 
-  // tag existing entries with size classes, then apply persisted state
-  feed.querySelectorAll('.journal-entry').forEach(function (a) { tag(a); if (globalOpen) setOpen(a, true, false); });
+  /* ---------- init ---------- */
   if (btnAll) btnAll.textContent = globalOpen ? 'Collapse all' : 'Expand all';
   setView(viewMode);
+  applySort(sortMode, false);   // home: random reshuffles every load
 
-  if (btnAll) btnAll.addEventListener('click', function () { setExpandAll(!globalOpen); });
   if (btnView) btnView.addEventListener('click', function () { setView(viewMode === 'grid' ? 'list' : 'grid'); });
+  if (btnAll) btnAll.addEventListener('click', function () { setExpandAll(!globalOpen); });
+  sortBtns.forEach(function (b) {
+    b.addEventListener('click', function () { applySort(b.dataset.sort, true); });   // clicking Random again reshuffles
+  });
 
-  // click an entry body (not links / not selecting text) to toggle just that one
   feed.addEventListener('click', function (ev) {
     if (ev.target.closest('a')) return;
     if (window.getSelection && String(window.getSelection()).length) return;
-    var art = ev.target.closest('.journal-entry');
-    if (!art) return;
-    setOpen(art, !art.classList.contains('open'), true);
+    var a = ev.target.closest('.journal-entry'); if (!a) return;
+    setOpen(a, !a.classList.contains('open'), true);
     gridLayoutDuring(460);
   });
 
   var rt;
   window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(gridLayout, 120); });
 
-  // infinite scroll
-  if (marker) {
-    var nextUrl = marker.getAttribute('data-next'), loading = false;
-    var loadMore = function () {
-      if (loading || !nextUrl) return;
-      loading = true; marker.classList.add('loading');
-      fetch(nextUrl).then(function (r) { return r.text(); }).then(function (html) {
-        var doc = new DOMParser().parseFromString(html, 'text/html');
-        doc.querySelectorAll('#post-feed > article').forEach(function (el) {
-          var node = document.importNode(el, true);
-          node.classList.add('fade-in');
-          tag(node);
-          feed.appendChild(node);
-          if (globalOpen) setOpen(node, true, false);
-        });
-        var nm = doc.getElementById('infinite-marker');
-        nextUrl = nm ? nm.getAttribute('data-next') : '';
-        loading = false; marker.classList.remove('loading');
-        gridLayout(); refreshClamp();
-        if (!nextUrl) { marker.style.display = 'none'; obs.disconnect(); }
-      }).catch(function () { loading = false; marker.classList.remove('loading'); });
-    };
-    var obs = new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) loadMore(); }); }, { rootMargin: '800px 0px' });
-    obs.observe(marker);
+  if (sentinel && 'IntersectionObserver' in window) {
+    new IntersectionObserver(function (es) { es.forEach(function (e) { if (e.isIntersecting) revealMore(); }); }, { rootMargin: '800px 0px' }).observe(sentinel);
   }
 })();
 </script>
