@@ -16,9 +16,5 @@ Thumbs.db
 # Raw source imports (private — never published)
 import/
 
-# Personal entries are kept LOCAL ONLY and never committed to the public repo.
-# To publish a specific one deliberately: git add -f <path>
-/content/posts/*.md
-!/content/posts/_index.md
-/content/dreams/*.md
-!/content/dreams/_index.md
+# NOTE: generated entries in content/ are now PUBLISHED (censored versions only).
+# The raw, UNCENSORED source in import/ stays private — see the import/ rule above.

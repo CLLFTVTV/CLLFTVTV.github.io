@@ -1,0 +1,9 @@
+---
+title: ""
+date: 1970-01-01T03:08:00
+tags: ["note"]
+undated: true
+hideMeta: true
+---
+
+Couple in askari. Guy dead?
