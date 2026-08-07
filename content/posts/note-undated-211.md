@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-***** referring to himself as female cuz *** is cute but sad
+Showing Jonas deRo to imaginary friends. Couldn't find him on dA. Fresh post saying he quit dA cuz AI.

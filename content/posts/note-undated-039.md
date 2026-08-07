@@ -6,5 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-It's a wonderful day, so no reason to cry
-Just pack up your things, then fuck off and die
+<-(o.o)->
+<-(-_-)->

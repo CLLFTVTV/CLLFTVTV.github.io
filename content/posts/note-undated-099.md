@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Drowning in blood, looking at kitty
+Do I feel like I missed out on being a baby?

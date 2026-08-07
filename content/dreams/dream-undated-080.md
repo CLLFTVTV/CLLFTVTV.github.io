@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-17B, inverted rusted ship hull, ramp, bike path, seaport dishonored wall style section behind pickup, inside cave
+Ran into ******* at an airport. was leaving for idk where

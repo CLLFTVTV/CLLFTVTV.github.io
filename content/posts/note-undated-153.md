@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-"Abhi abhi 11 baje hain do minute pehle" -*****
+I notice inconsistencies. That's how I catch lies. And that's why I don't remember normal days.(I think)

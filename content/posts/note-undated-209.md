@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Darr ka maara hua. What a peculiar thing to say to someone.
+Apparently CMH k ticket wale boy ne mujhe CMH k ilawa bhi kahin dekha hai

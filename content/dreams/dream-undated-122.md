@@ -6,8 +6,7 @@ undated: true
 hideMeta: true
 ---
 
-Vertical building
-Ma'am ***** FYP
-Opened up to her about something
-She helped
-Don't remember details
+Coastal area
+Modern but ghareeb ilaaqa, as in somewhat of a mid-lower class area of a modern (near future) city.
+Diner under highway or something
+Smoked and ate there

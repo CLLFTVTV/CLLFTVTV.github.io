@@ -6,8 +6,8 @@ undated: true
 hideMeta: true
 ---
 
-Got admitted into foreign university. Cool ass place. Had its own lake. Was in orientation or something. *** was there too. And ****. And **** *****. Sitting in some hall or something dk kis flow mein. **** nearby, loud as usual. **** comes up from behind, says mere account ka koi issue hai and office wale bula rahe. Go to small office, ome boys there, *** there too. Office wale tell me they've been looking for me cuz account issue.
+Don't remember the details or chronological order, but I was in the living room of my big ass house. Somebody (I think Penn & Teller) taught me how to shoot a gun. Not a real gun, one of those fake guns at carnivals etc. Followed by me teaching Shaquille O'Neal how to shoot the same gun.
 
-[Blank]
+Something about me asking *** to call over a certain ********. But she misunderstood and called over my cousin ******** instead. He brought over a baby with him. Don't remember what happened next.
 
-Riding over an overpass at night, maybe inside uni. Look over to see the uni and lake. Nice, peaceful vibe. Coincidentally uni also named FC.
+Something about ****'s other family and some snacks and furniture or something. Don't remember what.

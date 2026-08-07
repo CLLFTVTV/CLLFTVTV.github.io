@@ -6,4 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-***'s getting older
+Raindrops on roses, whiskers on kittens,
+Stickin my dick in rotisserie chickens.

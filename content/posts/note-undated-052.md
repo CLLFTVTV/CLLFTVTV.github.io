@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Guilty pleasures; even though guilty, hote to pleasures hi hain
+The voice behind internal dialogue also makes the silence

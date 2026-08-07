@@ -6,4 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-Night time. Driving around in au Askari X. We touched and skin reacted. Went with ***** to buy some skin cream or some shit.
+*16 missed calls*
+"Aaj aik class vi miss kar deti. Na tussi baat kar re ho"

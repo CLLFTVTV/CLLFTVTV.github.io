@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Developers expect players to be quick(minimaps, prompts etc.) But that's a steep learning curve for new players aka people who don't play many games in general. Developers only consider people who have played games before.
+From where I'm at now, your being nice feels like deception and trickery. Maybe not for people who're nice(r?)

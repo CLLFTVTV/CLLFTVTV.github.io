@@ -6,5 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Purani si lower class jaga with *** and ********
-Got into a fist fight cuz I flicked a lit cigarette at him
+Night time. Driving around in au Askari X. We touched and skin reacted. Went with ***** to buy some skin cream or some shit.

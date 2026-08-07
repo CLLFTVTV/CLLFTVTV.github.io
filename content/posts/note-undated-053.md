@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Not order behind the chaos; chaos behind the order
+I don't hate people; mein bus naraz hun

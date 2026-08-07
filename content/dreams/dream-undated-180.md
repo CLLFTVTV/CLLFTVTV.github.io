@@ -6,6 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Long ass dream. Barely remember anything.
-Some sort of flooding or something causing drastic change in set order of things.
-Ma'am ***** scandal. Nudes or something. Was walking with her to some place and asked her about it along the way. She didn't seem like her usual self.
+**** got married. Saw a picture somewhere of **** and ****. Both looked like mirror images of each other. **** with her new family, don't remember who **** was with.

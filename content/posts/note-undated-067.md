@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Mere specs low hain
+When I'm feeling lonely, people's niceness often feels like kindness

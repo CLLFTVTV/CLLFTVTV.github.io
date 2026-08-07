@@ -6,4 +6,9 @@ undated: true
 hideMeta: true
 ---
 
-Ma'am ***** told class to hug their drawings
+AU GACS/FC
+Took classes and what not
+**** hitting on me after class (felt super fucking nice btw), but *** wouldn't fuck off so I ignored her
+Ditched *** and went on 17B roof and encountered **** and some other dude. Pretended to look for nigga.
+Went to ***'s then back to FC to score
+Saw **** again and started chatting.

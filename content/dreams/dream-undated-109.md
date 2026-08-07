@@ -6,7 +6,6 @@ undated: true
 hideMeta: true
 ---
 
-Planetarium with abstract planets
-Jupiter and something almost colliding
-Saturn over landscape
-Planetarium/movie theater
+FC parking
+Was balled up on floor between two cars cuz exhausted.
+**** standing with. Inched towards her and rested head on her feet.

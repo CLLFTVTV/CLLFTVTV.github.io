@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Me, ****, ********, **** and some other people were in some sort of carpentry workshop. **** was explaining a dream she had to ********. I was thinking. **** was watching me think. Some sort of chess board. Dude outside workshop talking about movies with ********.
+***, ********, ******, and I were in ***'s room. Something with the *****.

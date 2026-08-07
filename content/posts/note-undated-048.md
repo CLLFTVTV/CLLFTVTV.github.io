@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Synchronized TV and telephone in horror room
+There are more pieces to your puzzles than you realize

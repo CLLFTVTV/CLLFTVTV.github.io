@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Lucky me or lucky you?
+Smile when slapped

@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Therapists aren't your friends
+Dream is the birthplace of thought

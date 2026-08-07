@@ -6,4 +6,6 @@ undated: true
 hideMeta: true
 ---
 
-****'s boy kicked me in E square.
+New therapist
+Some sort of game dev level design thing in mansion in AU FC
+Bomb dropped

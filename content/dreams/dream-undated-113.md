@@ -6,4 +6,8 @@ undated: true
 hideMeta: true
 ---
 
-******* was in arts class
+Vertical building
+Ma'am ***** FYP
+Opened up to her about something
+She helped
+Don't remember details

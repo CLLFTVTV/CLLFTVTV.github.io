@@ -6,5 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Late night at ***'s (17B old room), smoking, **** blender, PoS machine.
-Bike ride.
+Shooting star w/ ***

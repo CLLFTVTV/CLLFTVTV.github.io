@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Met the Sammaa sports journalist again on my way to uni. What a fucking npc
+Monday, 7th August. Saw Dr. ***** **** while dropping off **** at airport.

@@ -6,8 +6,6 @@ undated: true
 hideMeta: true
 ---
 
-Don't remember where it started, but was back in GJA somehow :')
-I was with someone, a girl(*****?), walking through the corridor. I was carrying her purse for her. We were talking about something, headed to her class. We enter and lo and behold, Ma'am ****** is the teacher!
-She was sitting on the table, smiling, talking to the class. She noticed me enter, greeted me and we talked a whole bunch. It was really nice chatting with her. Don't remember what we talked about but it was cathartic. Felt safe.
+Me, **** and **** caught for something in AU FC. We tried to make a run for it. Soon lost track of the others and just kept running. Realized they were really out to get me when the building started changing like Jindosh Mansion type labyrinth. Ran up stairs, across corridors, into vents etc. Eventually turned a corner and ran out onto a sort of terrace from where I jumped down onto a wall, slid across to a pillar and outside on the street.
 
-Handed my companion back her purse and left the room cuz Ma'am was about to start her class. Outside ran into a couple of more teachers, aur un sab ko mil kar bohut acha laga <3
+Called *** to tell her I was fine. Had a gut feeling that they still might be on to me so I started running again. Was running down the street when a helicopter starts trying to gun me down. Bikes and cars and shit blowing up all around. Everything in slow mo, high hopes playing in the background, ***'s voice over telling me I can't outrun my problems. Woke up when I accepted that the only way forward is to face my problems.

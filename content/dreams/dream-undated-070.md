@@ -6,8 +6,8 @@ undated: true
 hideMeta: true
 ---
 
-Chang
-Christmas
-Stealing
-Irritated
-Cafe diner authority bottles
+Au FC
+Accidentally retook chem 100 from ma'am hina abid
+When I withdrew it, the whole timeline changed. *** became a couple of years younger than me.
+Argument with security guard cuz I wasn't allowed to take my bike into the warehouse.
+Fight with ubaid's friend.

@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Rolled a ***** in FC parking but forgot I was smoking it. Entered the gate with ***** in hand and two proctors saw me. dk what happened after.
+17B, inverted rusted ship hull, ramp, bike path, seaport dishonored wall style section behind pickup, inside cave

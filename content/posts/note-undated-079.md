@@ -6,5 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Raindrops on roses, whiskers on kittens,
-Stickin my dick in rotisserie chickens.
+They feign a structure of self albeit they are scattered

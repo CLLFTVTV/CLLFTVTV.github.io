@@ -6,5 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Visited his office today...and holy shit
-It was him, not the office
+Driving a car in reverse is nostalgic because it takes me back

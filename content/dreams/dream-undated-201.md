@@ -6,4 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-Mulholland Drive inspired Al Pacino movie.
+In Sir ******'s class eating a sandwich when ***** **** says to him that we did an assignment but didn't get marked for it. Made me realize I forgot to put legendary animal meat in my sandwich.
+Before that, was scrolling through backpack, looking at legendaries. I had killed a Tai Lung looking mf with glowing teeth.

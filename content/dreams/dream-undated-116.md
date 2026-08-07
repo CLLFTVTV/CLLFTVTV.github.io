@@ -6,9 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-Hot air balloon trip with Ma'am ***** and one (maybe two) more dude(s).
-Don't remember deets cuz distractions.
-Stood together.
-maybe in an elevator or something, she said something, I replied but was too frank so added "...ma'am".
-Tried out different clothes in the bathroom
-There was a lot more stuff which I don't remember :(
+Late night at ***'s (17B old room), smoking, **** blender, PoS machine.
+Bike ride.

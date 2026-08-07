@@ -6,5 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Halloween in FC
-Smoking outside campus. Irtiza hung his keys on tree branch and lost them
+May or may not have invented controversial technology. Would face life in prison if confessed

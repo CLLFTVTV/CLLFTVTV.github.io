@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Smile when slapped
+"...and so you are driven into failure...into madness by the oblivion of directionlessness"

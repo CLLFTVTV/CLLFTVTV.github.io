@@ -6,4 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-Driving a car in reverse is nostalgic because it takes me back
+Campaign in poetry
+Govern in prose

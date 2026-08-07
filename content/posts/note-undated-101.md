@@ -6,4 +6,6 @@ undated: true
 hideMeta: true
 ---
 
-Do I feel like I missed out on being a baby?
+"I only look ahead"
+*Opens fridge*
+"Oh look, a head"

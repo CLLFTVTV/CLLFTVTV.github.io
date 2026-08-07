@@ -6,11 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-Don't remember start
-AU GACS O levels
-In maths exam by Sir ***** 
-Finished and asked sir if I answered sufficiently. He said yes.
-Celebratory kebab **** in class after exam, with ****
-Trouble finding lighter but eventually found one
-Teacher walked in and saw **** take a hit.
-Hid the **** and ran off. Threw my bag under some stairs. Got chased in the hallway. Woke up when they found my bag.
+Night time in AU FC or something
+Something about Ma'am *****, **** and a fox.

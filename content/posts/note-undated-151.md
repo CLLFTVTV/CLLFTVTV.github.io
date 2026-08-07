@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Wednesday, March 2nd. Next day of ma'am *****'s last class. I let myself breakdown and cry. Triggered by the vn. Never would've thought I'd cry like this someday. Not exactly sure how I feel right now.
+"Abhi abhi 11 baje hain do minute pehle" -*****

@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Haven't heard/read/seen the word 'spontaneously' in quite a while; probably a lot of other words as well.
+Sleep with a puddle of water on the bed so it'll feel like the water is hugging you

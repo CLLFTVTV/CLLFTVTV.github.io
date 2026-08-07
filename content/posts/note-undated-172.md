@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Nisar eating biscuits
+Is the idea of morality man made?

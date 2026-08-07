@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-There are more pieces to your puzzles than you realize
+Guilty pleasures; even though guilty, hote to pleasures hi hain

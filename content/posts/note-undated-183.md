@@ -6,5 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-Thursday, Oct 20, 2022.
-Opened up to *** ig
+Dropped off *** at night and hugged.
+**** showed community friendship video about airport hugs, the morning after, while dropping ***.

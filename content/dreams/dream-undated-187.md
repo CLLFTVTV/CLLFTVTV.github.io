@@ -6,5 +6,6 @@ undated: true
 hideMeta: true
 ---
 
-17B, night. The house was in it's early stages fsr.
-Smoking a *****. **** and **** wanted in too. But they attracted too much attention. Was in side alley with *** and Iram Chachi on either ends. Threw the j over the wall but they confronted me on the smell.
+Fam gathered in 17B lawn and blew up the house. Recorded it in slow motion. Somehow the chronology of the explosion got disrupted.
+
+Something about some job

@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I don't hate people; mein bus naraz hun
+I'm a fan of neuroticism

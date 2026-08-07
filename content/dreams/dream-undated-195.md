@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Some male celebrity and some Margot Robbie/Emma Stone female celebrity were having a photoshoot in surreal waters. The clouds were a very saturated blue with purple eyes in the sky. Woke up to rain and thunder.
+Day time, Italy. Shopping trip with the fam. *** explaining the geography of italy. Walked to some clothing shop to get shirts. Listening to news on phone while walking, something about corruption of pak fouj.

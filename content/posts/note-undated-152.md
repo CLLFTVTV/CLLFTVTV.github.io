@@ -6,6 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Broke beaker
-Forgot about screen timing
-Ok, Destiny
+HCI class, was missing ma'am *****. Mustafa (probably) noticed and offered me a biscuit.

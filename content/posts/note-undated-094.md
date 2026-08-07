@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-If these walls ain't taking, then why can I hear em?
+The wind knows better

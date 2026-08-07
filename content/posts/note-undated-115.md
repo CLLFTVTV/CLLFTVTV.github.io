@@ -6,4 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-Sleep with a puddle of water on the bed so it'll feel like the water is hugging you
+But if you never learn you're wrong
+You'll never learn at all

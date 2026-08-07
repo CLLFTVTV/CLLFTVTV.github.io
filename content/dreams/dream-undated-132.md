@@ -6,7 +6,10 @@ undated: true
 hideMeta: true
 ---
 
-Coastal area
-Modern but ghareeb ilaaqa, as in somewhat of a mid-lower class area of a modern (near future) city.
-Diner under highway or something
-Smoked and ate there
+Sector D park, morning
+**** wedded to ******
+They left the spot on foot
+I had ****'s Prius and decided to drop her off but lost track of them both
+Saw some guy in the middle of the park waving at me. Thought he spotted them.
+I hurriedly left the car and went to him only to find he wanted to show me something else
+Turned around and the car was getting jacked

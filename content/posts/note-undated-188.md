@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Couple in askari. Guy dead?
+I spend more time with people than they do with me

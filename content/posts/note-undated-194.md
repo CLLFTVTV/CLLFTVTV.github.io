@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-So much I don't admit to myself
+"Har yakki se makhan mein baal ki tarha nikla hun" -Wasa

@@ -6,4 +6,6 @@ undated: true
 hideMeta: true
 ---
 
-"Boy hai tu Kal ka" ~**** to Bad Suli
+1-1+1-1+1-1+...=1/2
+1-2+3-4+5-6+...=1/4
+1+2+3+4+5+6+...=-1/12

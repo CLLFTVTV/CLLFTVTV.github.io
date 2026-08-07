@@ -6,6 +6,8 @@ undated: true
 hideMeta: true
 ---
 
-17B exterior
-Witcher 3 mod
-killing chickens and pigs, crying stones not as good as before, ogre in front of Uncle *******'s house changed
+**** haircut and no hijab cuz boyfriend
+Started liking cars and painting and other things
+I was in backseat while she and he were in front
+
+Sitting high up in some trees with my clique, across from a huge mansion. The mansion and the surrounding city looked like something inspired by victorian architecture, yet dreamy. I was planning on how to infiltrate the mansion. **** was in the mansion and I wanted to get her out. I could think of plenty of ways to do that but always ended up asking myself why I was doing that. **** was happy in there. She didn't want to leave.

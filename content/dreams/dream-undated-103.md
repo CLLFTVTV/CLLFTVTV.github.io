@@ -6,8 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-*** busy with something
-**** and I smoking in public
-******* saw us
-I tried escaping through old 17B
-Hid in plants, eventually saw me
+Ma'am **** **** mansion

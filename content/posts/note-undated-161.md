@@ -6,6 +6,9 @@ undated: true
 hideMeta: true
 ---
 
-Bike kharab morality dilemma.
-Subah dude helped when not expecting. Promised would help next time I could.
-Didn't do it same day cuz didn't want to. Realized it too but still didn't. Although imagined telling it to ma'am *****.
+Thinking about meme
+In superstore aisle with ****
+"It is rather interesting what I'd do for a _ "
+Bit
+**** puts coin in hand, I spit out walnut
+She leaves

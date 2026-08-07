@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Lighter de mein ne insta kholna hai
+If these walls ain't taking, then why can I hear em?

@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Tee, thrwo, one
+Am I introspective or just self centered? *Insert why not both? meme*

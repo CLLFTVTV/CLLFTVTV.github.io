@@ -6,10 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Wait what? Ice kar k aap sote nai ho?
-
-Nai
-
-Bhai ice na karna mere saamne. Sone se ziada **** mujhe Kuch nai hai
-
-Gold digger: same
+Job interview

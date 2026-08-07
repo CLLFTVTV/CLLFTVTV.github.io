@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I'm picky about a lot of things actually
+Ma'am ***** ******'s voice and behavioral contrast. (Family?)

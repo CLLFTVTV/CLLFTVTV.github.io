@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Wordplay is defamiliarization
+Mere specs low hain

@@ -6,4 +6,8 @@ undated: true
 hideMeta: true
 ---
 
-It's not the looking in someone's eyes that bothers me, it's the being looked back. Pupil looks like abyss.
+I'm sorry I can't help you with your problems but thank you for helping me with mine.
+
+Ma'am ***** and ***** talking about me (cuz she remembered me)
+***: Marzi hai yaar suli, doston se baat ni karta, teachers se kar leta hai
+Suli: cuz they're better

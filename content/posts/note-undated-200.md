@@ -6,5 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-"Chaha hai k samjhe koi,
-Socha hai kyun samjhe koi?" -***** ****
+Guy on bike stopped to feed crows

@@ -6,6 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I've got ...a...idea
-Poor grammar
-Just like the idea
+Lucky to have a hobby

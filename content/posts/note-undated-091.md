@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Never keep your Bread in the fridge.
+It's not gay if you leave your socks on

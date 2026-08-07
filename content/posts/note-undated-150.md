@@ -6,4 +6,6 @@ undated: true
 hideMeta: true
 ---
 
-Just because it's illegal, doesn't mean it's wrong
+Broke beaker
+Forgot about screen timing
+Ok, Destiny

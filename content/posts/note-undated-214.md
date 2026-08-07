@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Showing Jonas deRo to imaginary friends. Couldn't find him on dA. Fresh post saying he quit dA cuz AI.
+"You were one step away from having a seat over there" ~Thor on Dr.Disrespect's pedo case

@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I forgot what I just ate....(biscuit)
+Lighting gas leaks appears pretty dumb but makes sense

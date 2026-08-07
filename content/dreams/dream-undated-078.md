@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Got ***** from A market. Saw those two sitting in the golden hut on my way to D park ig. Woke up with heartache.
+Pedophile attack. **** friends with *******

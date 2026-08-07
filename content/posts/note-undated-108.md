@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Into the stars; that's where I wanna be
+Calling someone a nigger is not racist. But treating someone like a nigger? Now, that's racist.

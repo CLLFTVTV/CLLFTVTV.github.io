@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Had ice cream and made out with a colleague's wife
+**** wedded to Kanye west. Backless white bridal dress

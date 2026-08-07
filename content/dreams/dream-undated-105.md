@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Pakke with *********
+******* was in arts class

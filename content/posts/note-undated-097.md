@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Should we? Or do we treat others the way we want to be treated?
+Drowning in blood, looking at kitty

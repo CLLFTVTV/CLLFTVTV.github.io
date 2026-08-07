@@ -6,6 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-New therapist
-Some sort of game dev level design thing in mansion in AU FC
-Bomb dropped
+Ma'am ***** teaching German to **** log.
+She had a past

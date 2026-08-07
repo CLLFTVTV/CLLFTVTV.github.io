@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Job interview
+1. if someone asks you to repeat their words, they mean in order, although it is not explicitly stated

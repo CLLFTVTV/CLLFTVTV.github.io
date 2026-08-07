@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Inside out planets in blackness. Simulations to hide from blackness.
+Developers expect players to be quick(minimaps, prompts etc.) But that's a steep learning curve for new players aka people who don't play many games in general. Developers only consider people who have played games before.

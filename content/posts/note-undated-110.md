@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Calling someone a nigger is not racist. But treating someone like a nigger? Now, that's racist.
+Inside out planets in blackness. Simulations to hide from blackness.

@@ -6,7 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Chem class in gym
-Line, roti, pic, chacha, *****
-PC, vid on phone, bike ride
-Touch
+Was sitting in some watch tower beside a lake at sunset. Purana crysis 1 type. With ***** and ****. We were deciding ****'s emoji for some whatsapp group or something. Went with a purple planet with a ring around it.

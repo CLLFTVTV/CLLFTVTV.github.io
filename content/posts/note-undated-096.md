@@ -6,4 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-The wind knows better
+"Call it magic
+because it's not for you"

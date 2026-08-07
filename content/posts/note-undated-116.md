@@ -6,4 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-From where I'm at now, your being nice feels like deception and trickery. Maybe not for people who're nice(r?)
+The things I do not show
+Are the things I mean the most

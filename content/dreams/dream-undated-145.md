@@ -6,4 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-**** wedded to Kanye west. Backless white bridal dress
+Bike ride to chashma
+Met *****, ***** and a bunch of other people

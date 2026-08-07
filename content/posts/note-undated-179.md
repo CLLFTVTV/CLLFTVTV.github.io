@@ -6,4 +6,7 @@ undated: true
 hideMeta: true
 ---
 
-It's a mixed bag
+"Bro, tie?"
+"Sorry, bro"
+*Leaves*
+"Bro, tie?"

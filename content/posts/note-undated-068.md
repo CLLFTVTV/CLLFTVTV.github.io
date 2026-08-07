@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I fucking hate maths
+Makes sense; is that my standard of acceptance?

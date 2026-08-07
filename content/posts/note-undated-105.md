@@ -6,11 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-*Leaving*
-"Baaki phenk dia?"
-"Itna embarrassing ho raha tha. Saara pressure. Itni ziada thi aur nai dal rahi thi. It was too hard." (Excitedly)
-"That wasn't the question."
-"Haan phenk dia."
-"Okay. Was it getting too hard?"
-"Haan. It was getting too hard."
-"Okay. Easy scene."
+The only thing my right hand can't feel is my right hand. It'll never get to feel what it's like to be my right hand.

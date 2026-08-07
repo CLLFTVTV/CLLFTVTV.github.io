@@ -6,9 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Thinking about meme
-In superstore aisle with ****
-"It is rather interesting what I'd do for a _ "
-Bit
-**** puts coin in hand, I spit out walnut
-She leaves
+Uper se bari, neeche se choti

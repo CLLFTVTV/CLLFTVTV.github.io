@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Today her, tomorrow another
+I'm really specific about the sounds I want to hear

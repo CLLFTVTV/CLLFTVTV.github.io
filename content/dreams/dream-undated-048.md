@@ -6,6 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-Rwp rooftop at night w/ ***
-I had *****, he was buying other ***** (***** matlab *****)
-Typing something on phone
+Purani si lower class jaga with *** and ********
+Got into a fist fight cuz I flicked a lit cigarette at him

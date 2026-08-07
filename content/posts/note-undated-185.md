@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Can't sleep
+Couple in askari. Guy dead?

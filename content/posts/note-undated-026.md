@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I'm not talking about my phone when I say my battery's low
+Lucky me or lucky you?

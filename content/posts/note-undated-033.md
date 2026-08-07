@@ -6,5 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Campaign in poetry
-Govern in prose
+Thora sa mil jaye bohut hai

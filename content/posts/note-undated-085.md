@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I'm picky about my people
+I am/was scared. I like closed spaces.

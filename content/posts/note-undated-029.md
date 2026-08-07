@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-"...and so you are driven into failure...into madness by the oblivion of directionlessness"
+The proper work of the mind is the exercise of choice, refusal, yearning, repulsion, preparation, purpose, and assent. What then can pollute and clog the mind’s proper functioning? Nothing but its own corrupt decisions.

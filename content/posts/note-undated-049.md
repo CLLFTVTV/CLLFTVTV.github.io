@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-If we don't take care of our customers, someone else will iykwim
+Cuff pockets. For emergency coins.

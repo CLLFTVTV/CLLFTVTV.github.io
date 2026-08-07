@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-What are _you_ talking about?
+Met the Sammaa sports journalist again on my way to uni. What a fucking npc

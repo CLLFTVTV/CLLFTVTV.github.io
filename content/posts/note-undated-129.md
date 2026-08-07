@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I have too many and very few people in my life at the same time
+2 uni people fighting over syllabus good or not

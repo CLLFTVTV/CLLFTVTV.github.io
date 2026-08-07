@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Cuff pockets. For emergency coins.
+Not order behind the chaos; chaos behind the order

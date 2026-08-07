@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Girl ran away from drunk ***
+At some shipping docks. Shehryar gave some sort of performance. Everyone loved that. Even ****.

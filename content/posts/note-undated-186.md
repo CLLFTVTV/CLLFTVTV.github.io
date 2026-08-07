@@ -6,5 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Dropped off *** at night and hugged.
-**** showed community friendship video about airport hugs, the morning after, while dropping ***.
+Couple at round about. Girl dead?

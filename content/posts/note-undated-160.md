@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Dude seemed like he was talking to himself. Thought he was interesting. Couldn't see girl cuz rush.
+Dude already had video opened for a question not even asked.

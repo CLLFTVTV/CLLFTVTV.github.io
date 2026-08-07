@@ -6,4 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-Being nice is a low end virtue
+It's a wonderful day, so no reason to cry
+Just pack up your things, then fuck off and die

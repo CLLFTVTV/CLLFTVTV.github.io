@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I should hang myself
+If I could rephrase that, I'd just say it again.

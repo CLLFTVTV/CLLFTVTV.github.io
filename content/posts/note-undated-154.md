@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-HCI class, was missing ma'am *****. Mustafa (probably) noticed and offered me a biscuit.
+Tee, thrwo, one

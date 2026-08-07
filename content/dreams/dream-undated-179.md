@@ -6,7 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-[In anticipation of **** and ***** coming]
-17B. Shaam-ish time. Phuppo made faalse ka juice and invited everyone over. All guests sitting in lawn. Tension in the air cuz of family feuds.
-
-**** and ***** arrive with ******. They don't know family sitch, family doesn't know our sitch. Couldn't leave with the boys immediately cuz fishy. But eventually hum side pe ho gaye.
+RDR/AC with ***, ******* and Sadie. *** blew up his horse with dynamite, and showed no remorse. ******* turned out to be a prophet.

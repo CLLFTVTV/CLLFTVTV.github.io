@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Do laanti kaise ho sakte hain? Reality check register
+I'm picky about my people

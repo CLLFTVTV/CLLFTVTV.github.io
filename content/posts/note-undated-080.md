@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Text with different font style for every letter
+My ego when I thought the game should've been focused around my king

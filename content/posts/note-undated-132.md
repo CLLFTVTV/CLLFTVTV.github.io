@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Lie detectors added in Convo, also interesting how boy is on machine, girl is on people
+I've never had a dream without other people in it. Which is interesting as although I don't engage with people much but I do think of them, as in other people are kinda crucial to my thought processes so not really surprising k they're in my dreams too.

@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I'm huggy at times
+I rarely have thoughts, it's mostly just internal dialogue

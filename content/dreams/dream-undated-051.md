@@ -6,5 +6,7 @@ undated: true
 hideMeta: true
 ---
 
-*16 missed calls*
-"Aaj aik class vi miss kar deti. Na tussi baat kar re ho"
+Trip to Venus.
+Nothing like actual Venus cuz trash at astronomy
+Got back at night, hungry cuz spent whole day on Venus
+Looking for shawarma in AU saddar

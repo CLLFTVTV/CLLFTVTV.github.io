@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I should be nicer to people
+***** thought I needed sociology cuz I'm a piece of shit

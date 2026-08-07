@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Lighting gas leaks appears pretty dumb but makes sense
+I'm nice to my family in ways they can't know

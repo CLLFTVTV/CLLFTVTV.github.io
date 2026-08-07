@@ -6,6 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Red diner
-***
-Himalayas
+***** research courses

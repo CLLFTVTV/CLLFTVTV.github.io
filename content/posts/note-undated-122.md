@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Wanting is exhausting. To want is to do, as it is with other things you do. It is not "inherent" to you and/or part of you, I think. Yes, one might say the _doing_ of it is part of you. Yes, true. Khair, wanting takes energy and effort. Wanting for too long without receiving tires and drains you. Easier to not want anything in the first place.
+It'd be so much easier to just not play video games. Yet I find myself eager to play. I like the joy or whatever of games so much that I would go through the discomfort of playing.

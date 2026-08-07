@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-**** got married. Saw a picture somewhere of **** and ****. Both looked like mirror images of each other. **** with her new family, don't remember who **** was with.
+***** was back. With him, **** and **** in some place.

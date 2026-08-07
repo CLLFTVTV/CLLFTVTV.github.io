@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Why are me and food so far apart?
+I fucking hate maths

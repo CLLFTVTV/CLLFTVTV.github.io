@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-The only thing my right hand can't feel is my right hand. It'll never get to feel what it's like to be my right hand.
+4th class(?), Vaccination in school. Came over fear of syringes cuz had to pretend I wasn't a pussy in front of busty.

@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Apne se alag tarha k logon ki duniya mein rehna hai, better learn how
+Wordplay is defamiliarization

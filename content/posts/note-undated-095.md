@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I'm emotionally attached to our solar system....I think. Idk I just felt sad when pluto was declared not a planet. Also, the planets are friends.
+Should we? Or do we treat others the way we want to be treated?

@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-It's heartbreaking to see ****. She should go abroad first, marry later.
+I've never experienced the death of someone I actually gave a shit about. All the people whose funeral I've been to have been nonexistent for me, prior to dying.

@@ -6,4 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-**** and family tried to cut me up for meat for biriyani
+Patwari solo trip
+Weird explosions in the sky

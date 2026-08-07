@@ -6,5 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-**** and **** almost caught with ******.
-**** slid it to me cuz I wasn't caught
+FYP exhibition ft. **** and friends, in a warehouse of sorts
+She made something for a PoS terminal, don't remember what I did

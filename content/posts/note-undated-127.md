@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-The 'art' of drag racing is just about who can find the best ratio.
+I have too many and very few people in my life at the same time

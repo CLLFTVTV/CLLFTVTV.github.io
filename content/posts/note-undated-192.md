@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Maybe I like feeling sad
+Iski Hawa bari kharab hai.

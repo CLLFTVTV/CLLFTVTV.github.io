@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Glass painting w/ ****
+***** referring to himself as female cuz *** is cute but sad

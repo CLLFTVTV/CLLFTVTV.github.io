@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-***'s plant hobby is normalized to me
+Haven't heard/read/seen the word 'spontaneously' in quite a while; probably a lot of other words as well.

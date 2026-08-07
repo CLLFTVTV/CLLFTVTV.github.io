@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-"I feel like killing myself" -Dr. **** Rizvi Jafree
+Is my name really *my* name?

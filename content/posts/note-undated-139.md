@@ -6,4 +6,10 @@ undated: true
 hideMeta: true
 ---
 
-Try thinking of "words" that sound like a real word but aren't.
+Wait what? Ice kar k aap sote nai ho?
+
+Nai
+
+Bhai ice na karna mere saamne. Sone se ziada **** mujhe Kuch nai hai
+
+Gold digger: same

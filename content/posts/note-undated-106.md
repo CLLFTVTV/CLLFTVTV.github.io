@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I know not by what fancy the fates push me about in their great cosmic dance. I am but a suli.
+Into the stars; that's where I wanna be

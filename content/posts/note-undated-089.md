@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Ao yaar double roti khaate hain
+Never keep your Bread in the fridge.

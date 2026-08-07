@@ -6,5 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-<-(o.o)->
-<-(-_-)->
+I should be nicer to people

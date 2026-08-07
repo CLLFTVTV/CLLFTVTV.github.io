@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I'm self-conscious about eating
+Lighter de mein ne insta kholna hai

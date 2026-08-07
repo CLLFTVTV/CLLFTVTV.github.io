@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-O level physics with **** *******
+Askari 1 like place. Something about not being able to die. Operated some sort of tank or something. Some lady who also couldn't die

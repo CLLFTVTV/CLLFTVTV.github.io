@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-'people' that inhabit 3D spaces
+Glass painting w/ ****

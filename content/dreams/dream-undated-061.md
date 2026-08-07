@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-A market gathering thing
+Quarry elevator

@@ -6,4 +6,9 @@ undated: true
 hideMeta: true
 ---
 
-Except for that one time, never heard a sound in any of my dreams, ever.
+Explaining above text. Outside of Sinclair hall.
+Ma'am ***** asks about above text
+When I realized I don't have a problem with books, I went back to when in class I said I don't like them, and said I'm kinda into them. And then wahan se above text.
+
+
+Eventually realized I wasn't actually telling you this.

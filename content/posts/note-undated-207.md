@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Monday, 7th August. Saw Dr. ***** **** while dropping off **** at airport.
+"Boy hai tu Kal ka" ~**** to Bad Suli

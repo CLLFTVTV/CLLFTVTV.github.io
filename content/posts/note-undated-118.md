@@ -6,5 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-The things I do not show
-Are the things I mean the most
+If I'd just killed my roommate
+If I'd just done the deed

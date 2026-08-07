@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Ohhh kid you are in for some MAJOR disappointments
+Being nice is a low end virtue

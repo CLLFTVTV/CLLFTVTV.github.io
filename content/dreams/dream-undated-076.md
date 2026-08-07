@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Old lady with Alzheimer's. 2 boys. Nortel dude's ***.
+**** and family tried to cut me up for meat for biriyani

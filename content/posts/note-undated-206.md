@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-maybe this whole **** thing is a problem
+Darr ka maara hua. What a peculiar thing to say to someone.

@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Ran into ******* at an airport. was leaving for idk where
+Sarah Lynn

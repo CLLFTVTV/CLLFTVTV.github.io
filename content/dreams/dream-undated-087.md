@@ -6,4 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-Applied mascara out of curiosity (I think). Looked kinda pretty ngl.
+Had an assignment or something on historical women. W/ ***** Bhai
+A WHOLE lot of other interesting things, none of which I remember.

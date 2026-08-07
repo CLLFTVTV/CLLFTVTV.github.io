@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-My ego when I thought the game should've been focused around my king
+I don't recall having it before but it felt familiar

@@ -6,6 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-1-1+1-1+1-1+...=1/2
-1-2+3-4+5-6+...=1/4
-1+2+3+4+5+6+...=-1/12
+Google blinking the thing I want like I'm a rat.

@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-A face meant to smile
+Ohhh kid you are in for some MAJOR disappointments

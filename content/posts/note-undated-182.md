@@ -6,7 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-"Bro, tie?"
-"Sorry, bro"
-*Leaves*
-"Bro, tie?"
+Can't sleep

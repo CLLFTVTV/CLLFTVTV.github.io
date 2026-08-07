@@ -6,5 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-Laying with *** on ship deck
-Another pirate ship crossed light source in sky
+Asked **** about courses
+Some well dressed guy approached her. She went all googly eyes and took her hijab off. Saw her tied up hair (which looked very pretty).

@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Aurora pic (**** goodbye)
+Internship building secret room

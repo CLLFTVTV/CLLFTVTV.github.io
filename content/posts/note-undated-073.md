@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I'm really specific about the sounds I want to hear
+My friends are audiences

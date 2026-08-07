@@ -6,7 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Gangstas live
-And gangstas die
-A gangsta don't know shit
-Don't ask a gangsta why
+It's a mixed bag

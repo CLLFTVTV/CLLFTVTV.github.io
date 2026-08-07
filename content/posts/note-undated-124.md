@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-It'd be so much easier to just not play video games. Yet I find myself eager to play. I like the joy or whatever of games so much that I would go through the discomfort of playing.
+Early Tetris games used randomness to generate every next piece you get. But now they generate a sequence of all the pieces, give you the sequence, then generate the next one. This reduces dependence on luck and gives room to strategize for next piece.

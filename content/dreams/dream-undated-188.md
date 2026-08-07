@@ -6,4 +6,7 @@ undated: true
 hideMeta: true
 ---
 
-Found some sort of The Office type documentary involving ****. When I saw the scene where her hair slipped out of her hijab, I realized I hit jackpot.
+Some sort of school reunion
+Whole batch, around 10-20 guys and girls, gathered in some park. I recorded some videos.
+Something about some school magazine that the girls were writing. Had some convos about something. Don't remember what.
+After party scenes also in park. Don't remember details.

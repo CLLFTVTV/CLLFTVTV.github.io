@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-4th class(?), Vaccination in school. Came over fear of syringes cuz had to pretend I wasn't a pussy in front of busty.
+***'s plant hobby is normalized to me

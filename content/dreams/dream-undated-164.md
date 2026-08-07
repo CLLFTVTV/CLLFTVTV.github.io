@@ -6,7 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-Some sort of work or study institution, kinda like cafe top floor
-Me, ****, ******, a whole bunch of other people
-She and I shared a seat
-Held her. She was warm.
+Day time, bike ride to gacs from 17B
+Saw **** on the way, also going to gacs

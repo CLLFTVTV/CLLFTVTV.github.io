@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-When I'm feeling lonely, people's niceness often feels like kindness
+Today her, tomorrow another

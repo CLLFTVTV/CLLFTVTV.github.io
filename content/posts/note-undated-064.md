@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Night time, petrol pump, ice cream, magnum opus
+Why are me and food so far apart?

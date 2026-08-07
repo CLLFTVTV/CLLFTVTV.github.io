@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-May or may not have invented controversial technology. Would face life in prison if confessed
+Found some sort of The Office type documentary involving ****. When I saw the scene where her hair slipped out of her hijab, I realized I hit jackpot.

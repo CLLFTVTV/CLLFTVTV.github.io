@@ -6,4 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-"Har yakki se makhan mein baal ki tarha nikla hun" -Wasa
+"Chaha hai k samjhe koi,
+Socha hai kyun samjhe koi?" -***** ****

@@ -6,4 +6,8 @@ undated: true
 hideMeta: true
 ---
 
-Saw a picture somewhere of **** kissing **** goodbye
+Something about garbage disposal from room
+
+Something about studying and teaching 
+
+In some sort of public gathering(AU sector F mosque). Imaginative shy guy good at faking reality. Trying to encourage him to tell his stories. Huge cloud-plane took off and crashed in a huge af explosion and killed everyone.

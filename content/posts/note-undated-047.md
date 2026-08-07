@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Is my name really *my* name?
+If we don't take care of our customers, someone else will iykwim

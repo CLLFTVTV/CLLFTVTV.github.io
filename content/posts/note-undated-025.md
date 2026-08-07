@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-That's gonna be one hell of a story to tell when we passing the *****
+I'm not talking about my phone when I say my battery's low

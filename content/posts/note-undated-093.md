@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-It's not gay if you leave your socks on
+I'm emotionally attached to our solar system....I think. Idk I just felt sad when pluto was declared not a planet. Also, the planets are friends.

@@ -6,4 +6,6 @@ undated: true
 hideMeta: true
 ---
 
-Josephine skriver insecurity
+Nigga bit me
+**** strangled me
+"***" shone light in my eyes

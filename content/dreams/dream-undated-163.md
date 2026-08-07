@@ -6,5 +6,6 @@ undated: true
 hideMeta: true
 ---
 
-Some sort of attic cleaning
-**** fossil eating scene
+Long ass dream. Barely remember anything.
+Some sort of flooding or something causing drastic change in set order of things.
+Ma'am ***** scandal. Nudes or something. Was walking with her to some place and asked her about it along the way. She didn't seem like her usual self.

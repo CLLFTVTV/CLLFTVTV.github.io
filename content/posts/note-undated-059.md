@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-(⁰.⁰)
+Really was (maybe still am) a fan of dissociation

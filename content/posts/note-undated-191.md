@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I spend more time with people than they do with me
+So much I don't admit to myself

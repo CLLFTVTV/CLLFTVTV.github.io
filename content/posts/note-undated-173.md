@@ -6,4 +6,7 @@ undated: true
 hideMeta: true
 ---
 
-Not all my thoughts have voices
+Gangstas live
+And gangstas die
+A gangsta don't know shit
+Don't ask a gangsta why

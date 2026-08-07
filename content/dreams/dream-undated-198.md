@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-RDR/AC with ***, ******* and Sadie. *** blew up his horse with dynamite, and showed no remorse. ******* turned out to be a prophet.
+**** was talking to *** about something.

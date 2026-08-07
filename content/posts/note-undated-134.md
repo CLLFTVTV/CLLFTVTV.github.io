@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I've never had a dream without other people in it. Which is interesting as although I don't engage with people much but I do think of them, as in other people are kinda crucial to my thought processes so not really surprising k they're in my dreams too.
+Except for that one time, never heard a sound in any of my dreams, ever.

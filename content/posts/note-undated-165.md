@@ -6,4 +6,6 @@ undated: true
 hideMeta: true
 ---
 
-Why tf do I grind my teeth?
+I've got ...a...idea
+Poor grammar
+Just like the idea

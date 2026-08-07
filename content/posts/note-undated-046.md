@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-If I could rephrase that, I'd just say it again.
+Synchronized TV and telephone in horror room

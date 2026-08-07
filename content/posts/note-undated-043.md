@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Also, I'm a piece of shit
+I should hang myself

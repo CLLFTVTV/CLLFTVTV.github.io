@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I am/was scared. I like closed spaces.
+Ao yaar double roti khaate hain

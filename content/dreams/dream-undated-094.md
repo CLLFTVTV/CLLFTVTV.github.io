@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Barish, rocky shore, *****, jet ski, ****, ***, port or something
+Movie with ****** ***** and her boyfriend

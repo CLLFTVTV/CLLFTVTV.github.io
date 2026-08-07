@@ -6,5 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Had an assignment or something on historical women. W/ ***** Bhai
-A WHOLE lot of other interesting things, none of which I remember.
+O level physics with **** *******

@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Lucky to have a hobby
+I like seeing

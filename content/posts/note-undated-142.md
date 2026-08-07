@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Cowboy saloon animation
+Bench shaped gravestone

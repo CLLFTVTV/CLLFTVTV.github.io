@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-2 uni people fighting over syllabus good or not
+I get more thoughts at home fsr

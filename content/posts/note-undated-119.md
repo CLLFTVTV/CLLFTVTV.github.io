@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Diminished, cast aside
+Pets are a thing.

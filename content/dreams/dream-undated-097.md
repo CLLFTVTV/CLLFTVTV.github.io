@@ -6,4 +6,9 @@ undated: true
 hideMeta: true
 ---
 
-Furnished room among wreckage (Trevor)
+*** gave me one hell of a thing to smoke near London bridge
+Went to some khoka on Delhi road at night
+Some dude crashed into car and passed out, ignored him and went home(17B)
+*** and *** Bhai noticed tyre terha
+Something about some dudes in female underwear
+Thought if they get too high, I'd steal them

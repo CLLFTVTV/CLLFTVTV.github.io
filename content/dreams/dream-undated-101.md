@@ -6,4 +6,7 @@ undated: true
 hideMeta: true
 ---
 
-Movie with ****** ***** and her boyfriend
+Planetarium with abstract planets
+Jupiter and something almost colliding
+Saturn over landscape
+Planetarium/movie theater

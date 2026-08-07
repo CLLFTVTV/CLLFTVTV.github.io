@@ -6,4 +6,7 @@ undated: true
 hideMeta: true
 ---
 
-Feelings are such a minefield
+Sunday, Oct 30, 2022.
+*** left.
+I guess I took him for granted.
+I guess I take a lot of things for granted.

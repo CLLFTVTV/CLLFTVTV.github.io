@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Pet fish in blender
+Lie detectors added in Convo, also interesting how boy is on machine, girl is on people

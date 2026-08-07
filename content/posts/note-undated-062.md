@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I rarely have thoughts, it's mostly just internal dialogue
+Night time, petrol pump, ice cream, magnum opus

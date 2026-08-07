@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Dude already had video opened for a question not even asked.
+Why tf do I grind my teeth?

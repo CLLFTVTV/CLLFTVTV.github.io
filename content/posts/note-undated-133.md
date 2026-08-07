@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I get more thoughts at home fsr
+Audio video dialogue contrast

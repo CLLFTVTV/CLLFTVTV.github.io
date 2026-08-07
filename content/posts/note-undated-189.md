@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Couple at round about. Girl dead?
+Maybe I like feeling sad

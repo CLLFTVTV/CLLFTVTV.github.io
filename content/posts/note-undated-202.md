@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Dream is the birthplace of thought
+'people' that inhabit 3D spaces

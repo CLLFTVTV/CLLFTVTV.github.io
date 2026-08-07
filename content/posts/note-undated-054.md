@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-The voice behind internal dialogue also makes the silence
+As a hobby, I wanna be a nursery class teacher in an elite school, seeing which possibility became true, (?), zookeeper

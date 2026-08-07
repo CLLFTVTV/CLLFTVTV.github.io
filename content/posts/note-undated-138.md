@@ -6,9 +6,38 @@ undated: true
 hideMeta: true
 ---
 
-Explaining above text. Outside of Sinclair hall.
-Ma'am ***** asks about above text
-When I realized I don't have a problem with books, I went back to when in class I said I don't like them, and said I'm kinda into them. And then wahan se above text.
+Forgive me if this is too personal but were you ever bullied as a child?
 
+No, I wasn't.
 
-Eventually realized I wasn't actually telling you this.
+No? Huh
+
+Why?
+
+Nothing.
+
+Still
+
+...idk it just seems like you were. Sorry, if you were.
+
+Why does it seem li-...
+
+Idk there's just something about you that says that you were so...
+
+Well, I wasn't.
+
+Ok
+
+*Silence*
+
+Were you bullied as a child?
+
+Oh, yes. Often.
+
+Why?
+
+*Looks away then back* why not?
+
+'why not'?
+
+Hey I mean don't ask me why. It's not like I'm the one who bullied myself. I mean I bully myself now but yk back then it wasn't me. Haha.

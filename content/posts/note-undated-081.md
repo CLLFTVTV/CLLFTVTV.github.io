@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-They feign a structure of self albeit they are scattered
+Do laanti kaise ho sakte hain? Reality check register

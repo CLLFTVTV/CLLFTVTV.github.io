@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I don't recall having it before but it felt familiar
+I'm picky about a lot of things actually

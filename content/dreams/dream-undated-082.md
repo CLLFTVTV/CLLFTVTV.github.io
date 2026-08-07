@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-***, ********, ******, and I were in ***'s room. Something with the *****.
+Applied mascara out of curiosity (I think). Looked kinda pretty ngl.

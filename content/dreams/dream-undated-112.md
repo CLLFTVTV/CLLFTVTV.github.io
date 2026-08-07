@@ -6,5 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-*** told me of some dude in the woods who does something better than me.
-Ma'am ***** searching for correct lyrics
+Morning Bike ride in front of GAB/PU with ***

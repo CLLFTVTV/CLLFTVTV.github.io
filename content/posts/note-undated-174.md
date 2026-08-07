@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I like seeing
+It's not the looking in someone's eyes that bothers me, it's the being looked back. Pupil looks like abyss.

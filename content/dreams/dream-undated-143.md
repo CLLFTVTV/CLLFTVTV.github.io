@@ -6,7 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-E 3rd
-Prepping for finals
-**** hijab-less, jaw length pigtails with eleyeen
-Cuddling with ***** and *****
+**** got into a relationship and started coming to uni hijabless for the boy

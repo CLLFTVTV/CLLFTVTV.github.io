@@ -6,4 +6,8 @@ undated: true
 hideMeta: true
 ---
 
-Went to FC fsr. Was a surreal and eerie night when I got a call from ***** telling me to meet him someplace but for the life of me I couldn't understand what place he was talking about. Left anyways. Not far from FC, got a text from **** telling me I left my helmet on campus. She said other things as well but yaad nai.
+Snowy area with the boys. Sunset. Everyone grouped in a cuddle puddle cuz cold. **** getting a picture taken with a squirrel or ferret or something. A baby was also with us fsr. Photographer dude passed **** a candy, baby tried to take it, **** took it and passed it to someone else, someone else passed it to me. I pointed out the clouds to guy who passed me the candy.
+*Blank*
+Something about matching columns
+*Blank*
+Beheaded guy brought back to life somehow. Sitting at a table, narrating something.

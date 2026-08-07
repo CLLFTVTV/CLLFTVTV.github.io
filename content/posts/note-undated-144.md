@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Bench shaped gravestone
+Speech is just sophisticated grunts. I don't like speech.

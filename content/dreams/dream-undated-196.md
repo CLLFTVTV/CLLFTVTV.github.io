@@ -6,4 +6,5 @@ undated: true
 hideMeta: true
 ---
 
-FCCU promo video or something. **** in it too, somewhere along the library path. Red/pink shalwar kameez, no hijab. Damn.
+Some sort of final term exam in GACS O Levels. Racing game. Discussed exam with people after class. Debate on where final score was 17k or 20k.
+More interactions with people (especially girls) but don't remember much.

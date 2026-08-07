@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-I'm a fan of neuroticism
+(⁰.⁰)

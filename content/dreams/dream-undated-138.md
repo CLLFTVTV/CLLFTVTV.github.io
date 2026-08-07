@@ -6,5 +6,6 @@ undated: true
 hideMeta: true
 ---
 
-Asked **** about courses
-Some well dressed guy approached her. She went all googly eyes and took her hijab off. Saw her tied up hair (which looked very pretty).
+17B exterior
+Witcher 3 mod
+killing chickens and pigs, crying stones not as good as before, ogre in front of Uncle *******'s house changed

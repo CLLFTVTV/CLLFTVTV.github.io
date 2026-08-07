@@ -6,7 +6,6 @@ undated: true
 hideMeta: true
 ---
 
-Me, ***, mariyam and ******(?)
-Some sort of gaming zone
-Huge fucking ******
-****** ne ziada lift nai karwai
+*** new Ghar was in Victorian London type AU paragon
+Some Ghar in the background
+Prolly koi baba nazdeek se guzra tha

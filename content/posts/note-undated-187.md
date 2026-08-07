@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-"Perspective badlna mushkil hai. Hain, ********?"
+Girl looking at schedule on office door

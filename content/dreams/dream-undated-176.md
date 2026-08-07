@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Disagreement with family. Class 6/7 Urdu teacher (don't remember her name) offered to teach me something. Ma'am ***** vibes. Some sort of restaurant type place. Couldn't find the library. Ma'am was very kind and understanding.
+Some male celebrity and some Margot Robbie/Emma Stone female celebrity were having a photoshoot in surreal waters. The clouds were a very saturated blue with purple eyes in the sky. Woke up to rain and thunder.

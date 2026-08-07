@@ -6,6 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-North trip
-Gang war
-Slept on roof and shit
+****'s boy kicked me in E square.

@@ -6,5 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-But if you never learn you're wrong
-You'll never learn at all
+Diminished, cast aside

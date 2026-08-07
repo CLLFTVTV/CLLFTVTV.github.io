@@ -6,4 +6,4 @@ undated: true
 hideMeta: true
 ---
 
-Am I introspective or just self centered? *Insert why not both? meme*
+Dude seemed like he was talking to himself. Thought he was interesting. Couldn't see girl cuz rush.
